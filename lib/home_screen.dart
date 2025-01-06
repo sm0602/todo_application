@@ -27,7 +27,7 @@ class HomeScreen extends StatelessWidget {
                         todoProvider.tasks[index].title,
                       ),
                       leading: Checkbox(
-                        value: false,
+                        value: todoProvider.tasks[index].isCompleted,
                         onChanged: (_) {
                           todoProvider
                               .isTaskCompleted(todoProvider.tasks[index].id);
