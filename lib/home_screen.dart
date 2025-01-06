@@ -20,7 +20,7 @@ class HomeScreen extends StatelessWidget {
                 ListView.builder(
                   shrinkWrap: true,
                   physics: NeverScrollableScrollPhysics(),
-                  itemCount: 6,
+                  itemCount: todoProvider.tasks.length,
                   itemBuilder: (context, index) {
                     return ListTile(
                       title: Text(
